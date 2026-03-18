@@ -7,80 +7,51 @@ import { ServiceCarousel } from './ServiceCarousel';
 import { SEO } from './SEO';
 import { BreadcrumbJsonLd } from './JsonLd';
 import { PAGE_SEO } from '../seo.config';
+import { GALLERY_DATA } from '../constants';
 
 const SERVICES_LIST = [
     {
         id: 'weddings',
-        title: 'Weddings',
+        title: GALLERY_DATA.weddings.serviceName,
         description: 'Your wedding day is a collection of fleeting moments and grand emotions. We capture it all—from the quiet anticipation to the wild celebration. Our documentary approach ensures your gallery feels authentic, timeless, and uniquely yours.',
         features: ['Full Day Coverage', 'Second Photographer', 'Engagement Session Included', 'Online Gallery & Print Rights'],
-        images: [
-            'https://picsum.photos/seed/wedding1/800/1000',
-            'https://picsum.photos/seed/wedding2/800/1000',
-            'https://picsum.photos/seed/wedding3/800/1000',
-            'https://picsum.photos/seed/wedding4/800/1000'
-        ]
+        images: GALLERY_DATA.weddings.galleryImages,
     },
     {
         id: 'engagements',
-        title: 'Engagements',
+        title: GALLERY_DATA.engagements.serviceName,
         description: 'Celebrate your love story with a session that feels like a date. Whether it\'s an adventure in the Gorge or a cozy coffee shop hang, we create a relaxed environment where you can just be yourselves.',
         features: ['90 Minute Session', '2 Locations', 'Outfit Changes', 'Styling Guide'],
-        images: [
-            'https://picsum.photos/seed/engage1/800/1000',
-            'https://picsum.photos/seed/engage2/800/1000',
-            'https://picsum.photos/seed/engage3/800/1000',
-            'https://picsum.photos/seed/engage4/800/1000'
-        ]
+        images: GALLERY_DATA.engagements.galleryImages,
     },
     {
         id: 'families',
-        title: 'Families',
+        title: GALLERY_DATA.families.serviceName,
         description: 'Forget the stiff poses. We want to capture the chaos, the laughter, and the love that makes your family who they are. We play games, run around, and let the kids lead the way.',
         features: ['60 Minute Session', 'Outdoor Location', 'Online Gallery', 'Print Store Access'],
-        images: [
-            'https://picsum.photos/seed/fam1/800/1000',
-            'https://picsum.photos/seed/fam2/800/1000',
-            'https://picsum.photos/seed/fam3/800/1000',
-            'https://picsum.photos/seed/fam4/800/1000'
-        ]
+        images: GALLERY_DATA.families.galleryImages,
     },
     {
         id: 'branding',
-        title: 'Branding',
+        title: GALLERY_DATA.branding.serviceName,
         description: 'Elevate your business with imagery that connects. We work with entrepreneurs and small businesses to create a visual library that tells your brand story and attracts your dream clients.',
         features: ['Strategy Call', 'Headshots & Lifestyle', 'Product Detail Shots', 'Social Media Content'],
-        images: [
-            'https://picsum.photos/seed/brand1/800/1000',
-            'https://picsum.photos/seed/brand2/800/1000',
-            'https://picsum.photos/seed/brand3/800/1000',
-            'https://picsum.photos/seed/brand4/800/1000'
-        ]
+        images: GALLERY_DATA.branding.galleryImages,
     },
     {
         id: 'headshots',
-        title: 'Headshots',
+        title: GALLERY_DATA.headshots.serviceName,
         description: 'Modern, approachable headshots that show the real you. Perfect for LinkedIn, your website, or speaking engagements. We ditch the stiff backdrops for natural light and genuine expressions.',
         features: ['30 Minute Session', '2 Looks', 'Retouching Included', 'Fast Turnaround'],
-        images: [
-            'https://picsum.photos/seed/head1/800/1000',
-            'https://picsum.photos/seed/head2/800/1000',
-            'https://picsum.photos/seed/head3/800/1000',
-            'https://picsum.photos/seed/head4/800/1000'
-        ]
+        images: GALLERY_DATA.headshots.galleryImages,
     },
     {
         id: 'seniors',
-        title: 'High School Seniors',
+        title: GALLERY_DATA.seniors.serviceName,
         description: 'Celebrate this major milestone with a session that showcases your personality. Bring your guitar, your dog, or your varsity jacket—we want these photos to feel 100% like you.',
         features: ['2 Hour Experience', 'Multiple Locations', 'Unlimited Outfits', 'Yearbook Submission'],
-        images: [
-            'https://picsum.photos/seed/senior1/800/1000',
-            'https://picsum.photos/seed/senior2/800/1000',
-            'https://picsum.photos/seed/senior3/800/1000',
-            'https://picsum.photos/seed/senior4/800/1000'
-        ]
-    }
+        images: GALLERY_DATA.seniors.galleryImages,
+    },
 ];
 
 export const ServicesPage: React.FC = () => {
